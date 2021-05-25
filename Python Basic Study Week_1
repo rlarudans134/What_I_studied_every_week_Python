@@ -1,0 +1,71 @@
+# 인코딩이란 사람의 언어를 컴퓨터가 알아 들을 수 있도록 해주는 변환 과정이다.
+
+print("hello world!")
+print("humid", "climate"); print("hot")
+
+# print 함수는 출력을 해주는 함수다.
+# 세미콜론은 한 줄의 두 개의 함수를 놔둘 떄, 사용된다.
+# 주석은 그 코드를 잠시 보류하거나, 설명을 써놓을 때 사용한다.
+
+a = input('숫자 입력 : ')
+print(a)
+
+# 파이썬에서는 input에 입력 되는 모든 것을 문자열로 간주한다.
+# a 변수에 값을 넣어주는 과정. c언어의 scanf 함수 기능.
+
+
+b = input('인사 해보자 : ')
+if b == 'hello':
+    print('oh hello')
+else:
+    print('oh bye')
+
+# if, else 절은 끝에 :을 붙여준다.
+# 추가적으로 elif 도 있다. else if의 뜻이다. 여러 개의 다른 조건을 붙여줄 때 사용한다.
+# if/else/elif 문은 파이썬에서 switch 문으로 사용한다. 파이썬에는 switch 문이 없다.
+
+for i in range(10):
+    print(i, end='')
+
+# for문 기본 형태이다. 무엇을 의미하는 진 추가적으로 알아보자. 변수 i의 초기값은 0으로 보인다. :를 뺴먹지 말자.
+# end 함수는 출력물 뒷 부분에 무언가를 추가해주거나, 출력물을 이어줄 떄 사용한다.
+
+num1 = type(10); num2 = type(2.4)
+print(num1, num2)
+
+# 자료형을 알려주는 함수다. 숫자 자료형엔 정수(int), 실수(float), 복소수(complex)가 존재한다.
+# 파이썬에선 자료형이 매우 중요하다. 자료형 강제 변환도 알아두자.
+# class 는 공통 특징을 가지고 있는 객체들의 모임이다.
+
+c, d = divmod(5, 2)
+
+# 5를 2로 나누어 몫과 나머지를 산출한다.
+# 산출 값을 변수에 넣어주겠다.
+
+print(c, d)
+
+print(c + d)
+print(c - d)
+print(c * d)
+print(c / d)
+print(c % d) # 나머지 출력.
+print(c // d) # 버림 나눗셈. 정수만 출력(몫 부분)
+print(c ** d) # 거듭 제곱. # 거듭제곱 자체 내장 함수를 사용해도 괜찮다. -> pow (x, y) => x ** y
+
+e = int(10.4); iu = int('20') # int로 실수를 정수로 강제 변환한다. 문자열도 가능하다. 하지만 문자열 안은 반드시 정수여야한다.
+print(e); print(iu)
+
+# divmod 함수는 몫과 나머지를 동시 계산 한다. 튜플로 값이 나온다. 변수 두 개의 값을 할당해줄 수 있다.
+# python 사칙연산, 그리고 버림 나눗셈과 거듭제곱이 있다. 그냥 나눗셈은 실수로 나오지만, 버림 나눗셈과 int 강제 변환으로 값을 정수로 나오게 할수 있다
+
+
+bi = 0b10 # binary number
+print(bi)
+
+ox = 0o20 # octal number
+print(ox)
+
+he = 0x0f # hexadecimal
+print(he)
+
+# 2, 8, 10, 16진수를 볼 수 있다. 각각의 표현 방법과 변환법은 아스키 코드를 참고하자. 10진수 영어 표현은 decimal number 이다.
